@@ -12,7 +12,7 @@ We are especially looking for students skilled in:
 - 💻 **Programming and coding** – if you have skills in HTML, JavaScript, CSS, and CSS frameworks (Bootstrap CSS or Tailwind CSS), we want you to help build and maintain the website  
 - 🎨 **Layout and Design** – 
 
-Joining the ICT team means:  
+What's in it for you:  
 
 - Hands-on experience with website development and content management  
 - Opportunities to contribute to official ASPA digital communications  
