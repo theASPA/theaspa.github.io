@@ -14,7 +14,7 @@ We are especially looking for students skilled in:
 
 Joining means:  
 
-- Hands-on experience with website development and content management  
+- Hands-on experience with website development and content management   
 - Opportunities to contribute to official ASPA digital communications  
 - Collaboration with motivated students with diverse skills  
 - The chance to see your work live on the ASPA website  
