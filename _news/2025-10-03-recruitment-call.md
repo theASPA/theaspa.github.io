@@ -1,5 +1,5 @@
 ---
-title: "ASPA-ICT Invites Students to Collaborate _"
+title: "ASPA-ICT Invites Students to Collaborate"
 date: 2025-10-03
 ---
 
