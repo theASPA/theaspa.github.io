@@ -6,4 +6,4 @@ collections:
     output: true
   news:
     output: true
-
+    permalink: /news/:title/
