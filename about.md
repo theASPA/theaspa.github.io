@@ -21,7 +21,7 @@ The Association for Students of Public Administration (ASPA) is dedicated to:
 
 ---
 
-📌 **Facebook:** [@KSU-ASPA](https://facebook.com/KSU-ASPA)
+📌 **Facebook:** [@KSU-ASPA]((https://www.facebook.com/share/176j1LcogE/)
 
 📌 **Email (main):** [ksuaspa01@gmail.com](ksuaspa01@gmail.com)
 
