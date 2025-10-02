@@ -5,7 +5,7 @@ title: News & Bulletin
 
 <h1>News & Bulletin</h1>
 
-<!-- Quick links section -->
+<!-- Quick links to other bulletin sections -->
 <div class="bulletin-links">
   <a href="/announcements.html">Announcements</a> |
   <a href="/events.html">Events</a> |
@@ -14,31 +14,14 @@ title: News & Bulletin
 
 <hr>
 
-<!-- News list -->
+<!-- Dynamic news listing -->
 <h2>Latest News</h2>
 <ul>
   {% assign sorted_news = site.news | sort: "date" | reverse %}
   {% for item in sorted_news %}
     <li>
-      <strong>{{ item.date | date: "%B %d, %Y" }}</strong> –
+      <strong>{{ item.date | date: "%B %d, %Y" }}</strong> – 
       <a href="{{ item.url }}">{{ item.title }}</a>
     </li>
   {% endfor %}
 </ul>
-
-<!-- Optional: highlight the launch news separately -->
-<h2>Feature: ASPA Website Launch</h2>
-<div class="featured-news">
-  <h3>ASPA-ICT Launches the Official ASPA Website</h3>
-  <p><em>October 02, 2025</em></p>
-  <p>
-    The ASPA Information and Communications Technology (ICT) team has officially launched the
-    <strong>ASPA website</strong>, a dedicated platform to keep students informed and engaged.
-  </p>
-  <ul>
-    <li>📰 News – timely announcements and highlights</li>
-    <li>🗓 Events – details on upcoming and past activities</li>
-    <li>📄 Meeting Minutes – records of student government sessions for accountability</li>
-    <li>📢 Announcements – important notices and reminders</li>
-  </ul>
-  <p>Stay tuned for more updates as we continue to expand th
