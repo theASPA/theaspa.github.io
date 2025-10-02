@@ -1,9 +1,21 @@
 ---
 layout: default
-title: News
+title: News & Bulletin
 ---
 
-<h1>News</h1>
+<h1>News & Bulletin</h1>
+
+<!-- Quick links section -->
+<div class="bulletin-links">
+  <a href="/announcements.html">Announcements</a> |
+  <a href="/events.html">Events</a> |
+  <a href="/minutes.html">Meeting Minutes</a>
+</div>
+
+<hr>
+
+<!-- News list -->
+<h2>Latest News</h2>
 <ul>
   {% assign sorted_news = site.news | sort: "date" | reverse %}
   {% for item in sorted_news %}
