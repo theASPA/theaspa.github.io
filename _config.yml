@@ -1,2 +1,9 @@
 title: "ASPA"
 description: "ASPA Club website: prototype 1"
+
+collections:
+  announcements:
+    output: true
+  news:
+    output: true
+
