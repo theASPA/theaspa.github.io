@@ -3,14 +3,3 @@ description: "Official Website"
 baseurl: ""
 url: "https://theaspa.github.io"
 theme: minima
-
-collections:
-  news:
-    output: true
-    permalink: /news/:path/
-  announcements:
-    output: true  
-    permalink: /announcements/:path/
-  meeting_minutes:
-    output: true
-    permalink: /minutes/:path/
