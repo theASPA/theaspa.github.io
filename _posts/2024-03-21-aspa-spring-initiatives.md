@@ -1,9 +1,11 @@
 ---
 layout: post
-title: "ASPA Spring Initiatives Launch"
-date: 2024-03-21 10:00:00 +0000
+title: "Welcome to our website"
+date: 2025-10-03 10:00:00 +0000
 categories: [news]
 ---
+*by: @jg*
+
 The ASPAICT welcomes you!
 
 If you're an ASPA member (all BPA students are), you are welcome to join in this journey of building a more connected and informed community. To make our digital presence as dynamic as our organization, we are putting together a dedicated web and content team.
