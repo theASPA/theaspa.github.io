@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Welcome to our website"
-date: 2025-10-01 12:00:00 +0000
+date: 2025-10-03 07:00:00 +0000
 categories: [news]
 ---
 *by: @jg*
@@ -17,3 +17,11 @@ We are specifically looking for members with skills in:
 *   **Visual Design:** Layout artists and photographers to shape our visual identity and document our events.
 
 This is your platform to build, create, and leave your mark. Your work will be the public face of ASPA.
+
+**Contact Information:**
+
+| Platform | Details |
+|----------|---------|
+| Facebook | [KSU-ASPA](https://facebook.com/KSU-ASPA) |
+| Main Email | ksuaspa01@gmail.com |
+| ICT Committee | aspa1ict@gmail.com |
