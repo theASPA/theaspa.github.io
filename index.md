@@ -1,6 +1,6 @@
 ---
 layout: home
-title: "ASPA - Home"
+title: "Home"
 ---
 
 # Welcome to ASPA
