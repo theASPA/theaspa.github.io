@@ -2,9 +2,12 @@ title: "ASPA"
 description: "Official Website"
 baseurl: ""
 url: "https://theaspa.github.io"
-theme: minima
+remote_theme: mmistakes/minimal-mistakes
+plugins:
+  - jekyll-remote-theme
 
 collections:
   blog:
     output: true
     permalink: /blog/:path/
+
