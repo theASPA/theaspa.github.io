@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Site Launch Confirmed"
-date: 2024-10-02 12:00:00 +0000
+title: "ASPAICT launches the ASPA website"
+date: 2025-10-02 12:00:00 +0000
 categories: [news]
 ---
 *by: @jg*
