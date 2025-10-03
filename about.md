@@ -18,7 +18,7 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
 
 ## Leadership Team
 
-### Executive Officers
+### Officers for SY 2025-26
 - **President:** Jenny Claire Fontanilla
 - **Vice President:** Joseph Gawon
 - **Secretary:** Elsie Duguit
@@ -29,6 +29,11 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
 - **Public Information Officer:** Althea Mamwag
 - **asdflksadjf:** John Cena
 
+### the Web and Publications team
+
+- @jg 
+  
+
 ---
 
-*Last updated: March 2024*
+*Last updated: Oct 2025*
