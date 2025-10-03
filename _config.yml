@@ -3,3 +3,8 @@ description: "Official Website"
 baseurl: ""
 url: "https://theaspa.github.io"
 theme: minima
+
+collections:
+  blog:
+    output: true
+    permalink: /blog/:path/
