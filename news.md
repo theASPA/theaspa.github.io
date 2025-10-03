@@ -4,18 +4,22 @@ title: News
 permalink: /news/
 ---
 
-# ASPA News
+# News
 
-The latest updates, achievements, and official reports from our organization.
+{% raw %}{% assign news_posts = site.posts | where: "categories", "news" %}
 
----
-
-{% raw %}{% for post in site.categories.news %}
-<div class="news-item">
-  <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-  <p class="post-meta">Published on {{ post.date | date: "%B %-d, %Y" }}</p>
-  {{ post.excerpt }}
-  <p><a href="{{ post.url }}">Read more →</a></p>
-</div>
-<hr>
-{% endfor %}{% endraw %}
+{% if news_posts.size > 0 %}
+  {% for post in news_posts %}
+  <article class="post">
+    <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+    <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+    <div class="post-content">
+      {{ post.content | truncatewords: 50 }}
+    </div>
+    <a href="{{ post.url | relative_url }}">Read full article</a>
+  </article>
+  {% unless forloop.last %}<hr>{% endunless %}
+  {% endfor %}
+{% else %}
+  <p>No news articles have been published yet.</p>
+{% endif %}{% endraw %}
