@@ -4,7 +4,7 @@ title: News
 permalink: /news/
 ---
 
-# News
+# News (testing page 1)
 
 {% raw %}{% assign news_posts = site.posts | where: "categories", "news" %}
 
