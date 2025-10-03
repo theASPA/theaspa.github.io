@@ -18,10 +18,9 @@ We are specifically looking for members with skills in:
 
 This is your platform to build, create, and leave your mark. Your work will be the public face of ASPA.
 
-**Contact Information:**
+**Connect With Us**
 
-| Platform | Details |
-|----------|---------|
-| Facebook | [KSU-ASPA](https://facebook.com/KSU-ASPA) |
-| Main Email | ksuaspa01@gmail.com |
-| ICT Committee | aspa1ict@gmail.com |
+- **Facebook:** [KSU-ASPA](https://facebook.com/KSU-ASPA)
+- **Email (main):** ksuaspa01@gmail.com
+- **Email (Web and Publication):** aspa1ict@gmail.com
+  
