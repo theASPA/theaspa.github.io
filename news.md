@@ -3,4 +3,7 @@ layout: page
 title: News
 permalink: /news/
 ---
-test
+
+Test
+
+Total posts: {% raw %}{{ site.posts | size }}{% endraw %}
