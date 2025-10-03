@@ -3,7 +3,7 @@ layout: home
 title: "Home"
 ---
 
-# Welcome to ASPA
+# Welcome to the ASPA website
 
 The official digital hub for news, announcements, and community updates.
 
@@ -26,9 +26,10 @@ The official digital hub for news, announcements, and community updates.
 - **Email (General):** ksuaspa01@gmail.com
 - **Email (ICT):** aspa1ict@gmail.com
 
-## 📢 Latest News & Updates
-<!-- This will auto-populate with your recent posts -->
+
 
 ---
 
 *This website is built and maintained by ASPAICT.*
+
+## 📢 Latest News & Updates
