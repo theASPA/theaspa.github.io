@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher's Day Greeting</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            background: #f1f4f8;
+            color: #002b50;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+            padding: 20px;
+        }
+
+        /* Card Container (scales as a whole) */
+        .card-container {
+            width: 1000px;
+            transform-origin: top center;
+            transition: transform 0.4s ease;
+            margin-bottom: 40px;
+        }
+
+        .greeting-card {
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            overflow: hidden;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.85);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+            backdrop-filter: blur(6px);
+        }
+
+        .greeting-card::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(circle at bottom left, rgba(0, 60, 125, 0.35) 0%, transparent 60%),
+                linear-gradient(145deg, rgba(0, 60, 125, 0.15), transparent 70%),
+                radial-gradient(circle, rgba(0, 60, 125, 0.12) 1px, transparent 1px);
+            background-size: cover, cover, 22px 22px;
+            z-index: 0;
+        }
+
+        .text-panel, .image-panel {
+            position: relative;
+            z-index: 1;
+            flex: 1 1 50%;
+            padding: 40px;
+        }
+
+        .text-panel {
+            background: rgba(255, 255, 255, 0.6);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .image-panel {
+            background: rgba(255, 255, 255, 0.5);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logos {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .logos img {
+            width: 70px;
+            filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header h2 {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #003a8c;
+        }
+
+        .header h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #1858a8;
+            margin-top: 4px;
+        }
+
+        .header h4 {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #004c91;
+            margin-top: 3px;
+        }
+
+        .text-panel h1 {
+            font-size: 2.2rem;
+            color: #003a8c;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+
+        .text-panel p {
+            line-height: 1.6;
+            color: #111;
+            margin-bottom: 1rem;
+        }
+
+        .signature {
+            font-style: italic;
+            color: #004c99;
+        }
+
+        .hashtag {
+            font-weight: 600;
+            color: #0077b6;
+        }
+
+        .image-frame {
+            position: relative;
+            background: rgba(255, 255, 255, 0.7);
+            border: 4px solid rgba(0, 60, 125, 0.3);
+            border-radius: 14px;
+            padding: 10px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+            max-width: 80%;
+        }
+
+        .image-frame img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            border-radius: 10px;
+        }
+
+        .image-caption {
+            background: rgba(0, 45, 95, 0.8);
+            color: #fff;
+            font-weight: 600;
+            text-align: center;
+            width: 90%;
+            margin-top: 15px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            color: #003a8c;
+            font-weight: 600;
+            background: rgba(255, 255, 255, 0.4);
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            width: 100%;
+            margin-top: 20px;
+            border-radius: 0 0 20px 20px;
+        }
+
+        /* Lookup Form */
+        .lookup-form {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+            text-align: center;
+        }
+
+        .lookup-form h3 {
+            color: #003a8c;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #003a8c;
+            text-align: left;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e1e5eb;
+            border-radius: 8px;
+            font-family: "Poppins", sans-serif;
+            font-size: 16px;
+        }
+
+        .btn {
+            background: #004c91;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #0077c2;
+        }
+
+        .btn-primary {
+            background: #003a8c;
+        }
+
+        .btn-primary:hover {
+            background: #0056b3;
+        }
+
+        /* Mobile stacked layout */
+        body.mobile-mode .greeting-card {
+            flex-direction: column;
+            width: 100%;
+        }
+
+        body.mobile-mode .text-panel h1 {
+            text-align: center;
+            font-size: 1.8rem;
+        }
+
+        body.mobile-mode .image-frame {
+            width: 85%;
+        }
+
+        /* Toggle Button */
+        .toggle-view {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #004c91;
+            color: #fff;
+            border: none;
+            border-radius: 30px;
+            padding: 12px 20px;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+            z-index: 10;
+        }
+
+        .toggle-view:hover {
+            background: #0077c2;
+        }
+
+        @media (max-width: 1100px) {
+            .card-container {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="card-container" id="cardContainer">
+    <div class="greeting-card">
+        <div class="text-panel">
+            <div class="logos">
+                <img src="" alt="KSU LOGO transparent.png">
+                <img src="CPAIG LOGO transparent.png" alt="Logo 2">
+                <img src="aspasealfinal.png" alt="Logo 3">
+            </div>
+            <div class="header">
+                <h2>KALINGA STATE UNIVERSITY</h2>
+                <h3>COLLEGE OF PUBLIC ADMINISTRATION AND INDIGENOUS GOVERNANCE</h3>
+                <h4>ASSOCIATION FOR STUDENTS OF PUBLIC ADMINISTRATION</h4>
+            </div>
+            <h1 id="mainGreetingHeader">Celebrating the Heart of Education</h1>
+            <p id="mainGreetingBody">Enter a teacher's name below to generate their personalized greeting card.</p>
+            <p class="signature">– The Students</p>
+            <p class="hashtag">#myteachermyhero</p>
+        </div>
+
+        <div class="image-panel">
+            <div class="image-frame">
+                <img id="teacherImage" src="https://via.placeholder.com/400x300/003a8c/ffffff?text=Teacher+Photo" alt="Teacher">
+            </div>
+            <div class="image-caption" id="imageCaption">Enter teacher name to generate greeting</div>
+        </div>
+    </div>
+    <footer>theaspa.github.io | facebook: KSU-ASPA</footer>
+</div>
+
+<div class="lookup-form">
+    <h3>Find Teacher's Greeting Card</h3>
+    <div class="form-group">
+        <label for="teacherKey">Enter Teacher's Name:</label>
+        <input type="text" id="teacherKey" placeholder="e.g. don, maria, john">
+    </div>
+    <button class="btn btn-primary" id="lookupBtn">Generate Greeting Card</button>
+</div>
+
+<button class="toggle-view" id="toggleViewBtn">Switch to Mobile View</button>
+
+<script>
+    // Teacher data - add your teachers here
+    const teachers = {
+        "sirMosh": {
+            image: "sirMosh.jpg",
+            caption: "Happy Teacher's Day, Sir Don!",
+            greetingHeader: "A Teacher's Day Greeting to Sir Don",
+            greetingBody: "Sir Don, your passion for mathematics and your ability to make complex concepts understandable has inspired countless students. Thank you for your dedication and for always pushing us to reach our full potential."
+        },
+        "mamZaira": {
+            image: "mamZaira.jpg",
+            caption: "Happy Teacher's Day, Ma'am Maria!",
+            greetingHeader: "A Teacher's Day Greeting to Ma'am Maria",
+            greetingBody: "Ma'am Maria, your enthusiasm for science is contagious. You've shown us that learning can be an exciting adventure, and your creative teaching methods have made even the most challenging topics enjoyable. Thank you for sparking our curiosity!"
+        },
+        "mamAllana": {
+            image: "https://images.unsplash.com/photo-1544717297-fa95b6ee9643?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
+            caption: "Happy Teacher's Day, Sir John!",
+            greetingHeader: "A Teacher's Day Greeting to Sir John",
+            greetingBody: "Sir John, your literature classes have opened our minds to new worlds and perspectives. Your insightful feedback and encouragement have helped us grow not just as students, but as thinkers and individuals. Thank you for sharing your love of language with us."
+        }
+        // Add more teachers as needed
+    };
+
+    // DOM Elements
+    const teacherImage = document.getElementById('teacherImage');
+    const imageCaption = document.getElementById('imageCaption');
+    const mainGreetingHeader = document.getElementById('mainGreetingHeader');
+    const mainGreetingBody = document.getElementById('mainGreetingBody');
+    const teacherKeyInput = document.getElementById('teacherKey');
+    const lookupBtn = document.getElementById('lookupBtn');
+
+    // Lookup function
+    function lookupTeacher() {
+        const key = teacherKeyInput.value.trim().toLowerCase();
+        
+        if (!key) {
+            alert("Please enter a teacher's name");
+            return;
+        }
+        
+        if (teachers[key]) {
+            // Update the card with teacher data
+            teacherImage.src = teachers[key].image;
+            imageCaption.textContent = teachers[key].caption;
+            mainGreetingHeader.textContent = teachers[key].greetingHeader;
+            mainGreetingBody.textContent = teachers[key].greetingBody;
+        } else {
+            alert("Teacher not found. Please try another name.");
+        }
+    }
+
+    // Event listeners
+    lookupBtn.addEventListener('click', lookupTeacher);
+    teacherKeyInput.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            lookupTeacher();
+        }
+    });
+
+    // Existing view toggle functionality
+    const btn = document.getElementById("toggleViewBtn");
+    const card = document.getElementById("cardContainer");
+    const body = document.body;
+
+    function scaleCard() {
+        if (body.classList.contains("mobile-mode")) return;
+        const scale = Math.min(window.innerWidth / 1000, window.innerHeight / 700);
+        card.style.transform = `scale(${scale})`;
+    }
+
+    btn.addEventListener("click", () => {
+        body.classList.toggle("mobile-mode");
+        btn.textContent = body.classList.contains("mobile-mode")
+            ? "Switch to Desktop Card View"
+            : "Switch to Mobile View";
+        if (body.classList.contains("mobile-mode")) {
+            card.style.transform = "scale(1)";
+        } else {
+            scaleCard();
+        }
+    });
+
+    window.addEventListener("resize", scaleCard);
+    scaleCard();
+</script>
+</body>
+</html>
