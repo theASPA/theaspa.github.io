@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASPA | Essays</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/xcss1.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand bg-white border-bottom shadow-sm fixed-top py-2">
+    <div class="container-fluid justify-content-between align-items-center flex-wrap px-3">
+      <div class="d-flex align-items-center w-100 justify-content-between flex-wrap gap-3">
+        <div class="d-flex gap-3 flex-grow-1">
+          <a class="nav-link fw-semibold" href="home.html"><i class="bi bi-house-door me-1"></i>Home</a>
+          <a class="nav-link fw-semibold" href="news.html"><i class="bi bi-newspaper me-1"></i>News</a>
+          <a class="nav-link fw-semibold active text-primary" href="essays.html"><i class="bi bi-journal-text me-1"></i>Essays</a>
+          <a class="nav-link fw-semibold" href="about.html"><i class="bi bi-people-fill me-1"></i>About</a>
+        </div>
+        <div class="dropdown ms-auto">
+          <a class="nav-link dropdown-toggle fw-semibold more-link" href="#" id="moreMenu" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-grid-3x3-gap-fill me-1"></i>More
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end shadow border-0 rounded-3">
+            <li><a class="dropdown-item" href="minutes.html"><i class="bi bi-clock-history me-2 text-success"></i>Meeting Minutes</a></li>
+            <li><a class="dropdown-item" href="transparency.html"><i class="bi bi-eye-fill me-2 text-info"></i>Transparency</a></li>
+            <li><a class="dropdown-item" href="maintenance.html"><i class="bi bi-gear-fill me-2 text-danger"></i>Site Maintenance</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container mt-5 pt-5">
+    <h2 class="fw-bold mb-4 text-center text-primary"><i class="bi bi-journal-richtext me-2"></i>Essays</h2>
+    <div class="row" id="essays-container">
+      <!-- Essays will load here dynamically -->
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center py-4 mt-5 border-top bg-light">
+    <small class="text-muted">© 2025 ASPA | Managed by <span class="text-primary">@jg</span></small>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Load Essays JSON -->
+  <script>
+    fetch('data/essays.json')
+      .then(response => response.json())
+      .then(essays => {
+        const container = document.getElementById('essays-container');
+        essays.forEach(essay => {
+          const card = document.createElement('div');
+          card.className = 'col-md-6 mb-4';
+          card.innerHTML = `
+            <div class="card border-0 shadow-sm rounded-4 h-100 hover-card d-flex flex-row align-items-center p-2">
+              <img src="${essay.image || 'assets/images/default.jpg'}" class="img-fluid rounded-3 me-3" style="width: 100px; height: 100px; object-fit: cover;" alt="Essay Image">
+              <div class="card-body p-0">
+                <h5 class="card-title fw-bold text-primary">${essay.title}</h5>
+                <p class="card-text text-muted mb-1"><em>by ${essay.author}</em></p>
+                <p class="card-text text-muted small">${essay.excerpt}</p>
+                <a href="${essay.link}" class="btn btn-outline-primary btn-sm mt-1"><i class="bi bi-arrow-right-circle me-1"></i>Read More</a>
+              </div>
+            </div>
+          `;
+          container.appendChild(card);
+        });
+      })
+      .catch(err => {
+        document.getElementById('essays-container').innerHTML = `<p class="text-muted text-center">Failed to load essays.</p>`;
+        console.error('Error loading essays:', err);
+      });
+  </script>
+</body>
+</html>
