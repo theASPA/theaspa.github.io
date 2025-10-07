@@ -3,14 +3,21 @@
     "title": "The Spirit of Public Service",
     "author": "Maria L. delos Santos",
     "excerpt": "A reflection on the enduring values that guide the field of public administration.",
-    "image": "assets/images/essay1.jpg",
+    "date": "2025-09-20",
     "link": "#"
   },
   {
     "title": "Ethics in Governance",
     "author": "Jared R. Baldo",
     "excerpt": "Why integrity and accountability must anchor every decision in public service.",
-    "image": "assets/images/essay2.jpg",
+    "date": "2025-09-10",
+    "link": "#"
+  },
+  {
+    "title": "Student Leadership in Action",
+    "author": "Lea A. Soriano",
+    "excerpt": "Leadership is more than holding a position — it’s about making a difference.",
+    "date": "2025-08-28",
     "link": "#"
   }
 ]
