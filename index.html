@@ -22,6 +22,7 @@
       height: 100vh;
       text-align: center;
       color: #333;
+      flex-direction: column;
     }
 
     h1 {
@@ -33,18 +34,19 @@
 
     .btn-check {
       font-weight: 600;
-      padding: 0.75rem 2rem;
+      padding: 1rem 2rem;
       border-radius: 50px;
-      border: 2px solid #333;
-      color: #333;
-      background: transparent;
+      border: none;
+      color: #fff;
+      background-color: #007B8A; /* visible turquoise button */
       transition: all 0.3s ease;
       text-transform: uppercase;
       letter-spacing: 1px;
+      font-size: 1.1rem;
     }
 
     .btn-check:hover {
-      background-color: #333;
+      background-color: #005f6b;
       color: #fff;
     }
 
@@ -53,15 +55,14 @@
         font-size: 1.8rem;
       }
       .btn-check {
-        padding: 0.6rem 1.5rem;
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
       }
     }
   </style>
 </head>
 <body>
-  <div>
-    <h1>tHiS sItE iS uNdEr CoNsTrUcTiOn</h1>
-    <a href="home.html" class="btn btn-check">Check it Out</a>
-  </div>
+  <h1>tHiS sItE iS uNdEr CoNsTrUcTiOn</h1>
+  <a href="home.html" class="btn btn-check">Check it Out</a>
 </body>
 </html>
