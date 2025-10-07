@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASPA | Project Structure</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/xcss1.css">
+  <style>
+    /* Extra styling for file tree page */
+    pre {
+      background-color: #f8f9fb;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      font-family: 'Courier New', Courier, monospace;
+      overflow-x: auto;
+    }
+    body {
+      padding-top: 70px;
+    }
+    h1 {
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+   <nav class="navbar navbar-expand bg-white border-bottom shadow-sm fixed-top py-2">
+    <div class="container-fluid justify-content-between align-items-center flex-wrap px-3">
+      <div class="d-flex align-items-center w-100 justify-content-between flex-wrap gap-3">
+        <div class="d-flex gap-3 flex-grow-1">
+          <a class="nav-link fw-semibold" href="home.html"><i class="bi bi-house-door me-1"></i>Home</a>
+          <a class="nav-link fw-semibold" href="news.html"><i class="bi bi-newspaper me-1"></i>News</a>
+          <a class="nav-link fw-semibold active" href="about.html"><i class="bi bi-people-fill me-1"></i>About</a>
+        </div>
+
+        <!-- More dropdown -->
+        <div class="dropdown ms-auto">
+          <a class="nav-link dropdown-toggle fw-semibold more-link" href="#" id="moreMenu" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-grid-3x3-gap-fill me-1"></i>More
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end shadow border-0 rounded-3">
+            <li><a class="dropdown-item" href="essays.html"><i class="bi bi-journal-richtext me-2 text-primary"></i>Essays</a></li>
+            <li><a class="dropdown-item" href="minutes.html"><i class="bi bi-clock-history me-2 text-success"></i>Meeting Minutes</a></li>
+            <li><a class="dropdown-item" href="transparency.html"><i class="bi bi-eye-fill me-2 text-info"></i>Transparency</a></li>
+            <li><a class="dropdown-item" href="maintenance.html"><i class="bi bi-gear-fill me-2 text-danger"></i>Site Maintenance</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="container text-center my-5">
+    <h1 class="fw-bold">ASPA Website Project Structure</h1>
+    <p class="text-muted">Directory layout</p>
+  </header>
+
+  <!-- File Tree -->
+  <main class="container mb-5">
+    <pre>
+aspa-website/
+│
+├─ index.html               # Landing page (hero only, Enter Site → home.html)
+├─ home.html                # Main homepage; cards dynamically populated
+├─ news.html                # News page; dynamically renders news items
+├─ essays.html              # Essays page; dynamically renders essays
+├─ minutes.html             # Meeting Minutes page
+├─ transparency.html        # Transparency page
+├─ maintenance.html         # Site Maintenance page
+│
+├─ css/
+│   └─ xcss1.css            # Custom CSS (minimalist neutral aesthetic)
+│
+├─ js/
+│   ├─ main.js              # Handles dynamic rendering of JSON content
+│   └─ helpers.js           # Optional: utilities for formatting dates, filtering, etc.
+│
+├─ data/
+│   ├─ news.json            # Array of news items (title, date, excerpt, link)
+│   ├─ essays.json          # Array of essay items (title, author, excerpt, link)
+│   ├─ minutes.json         # Meeting minutes items
+│   └─ transparency.json    # Transparency items
+│
+├─ assets/
+│   ├─ logo.png             # ASPA logo
+│   ├─ hero-bg.jpg          # Landing page background
+│   ├─ images/              # Optional: images for news/essays/etc.
+│   └─ docs/                # PDFs, other downloadable content
+│
+├─ README.md
+└─ .gitignore
+    </pre>
+    <h3>
+    PROJECT HISTORY
+    </h3>
+    
+    <h4>2025</h4>
+    <p>20 Sept: Conceptualization and work started<br>
+    29 Sept: Website launced<br>
+    30 Sept: Jekyll implemented<br>
+    7 October: Jekyll removed in favor of BootstrapCSS and manual build
+    
+    </p>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center py-4 border-top bg-light">
+    <small class="text-muted">© 2025 ASPA | Managed by <span class="text-dark">@jg</span></small>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
