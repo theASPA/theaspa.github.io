@@ -12,57 +12,59 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
 
   <style>
-    body {
+    /* Full-screen centered layout */
+    html, body {
       margin: 0;
+      padding: 0;
+      height: 100%;
       font-family: 'Montserrat', sans-serif;
-      background-color: #f8f9fb;
+      background-color: #f1f1f1;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
       text-align: center;
-      color: #333;
-      flex-direction: column;
     }
 
     h1 {
       font-size: 2.5rem;
       margin-bottom: 2rem;
+      color: #222;
       text-transform: uppercase;
       letter-spacing: 2px;
     }
 
-    .btn-check {
-      font-weight: 600;
+    .btn-enter {
+      display: inline-block;
       padding: 1rem 2rem;
+      font-size: 1.2rem;
+      font-weight: 600;
       border-radius: 50px;
-      border: none;
+      background-color: #007B8A; /* solid turquoise */
       color: #fff;
-      background-color: #007B8A; /* visible turquoise button */
-      transition: all 0.3s ease;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      font-size: 1.1rem;
+      text-decoration: none;
+      transition: background 0.3s ease, transform 0.2s ease;
     }
 
-    .btn-check:hover {
+    .btn-enter:hover {
       background-color: #005f6b;
-      color: #fff;
+      transform: translateY(-2px);
     }
 
     @media (max-width: 576px) {
       h1 {
         font-size: 1.8rem;
       }
-      .btn-check {
-        padding: 0.8rem 1.5rem;
+      .btn-enter {
         font-size: 1rem;
+        padding: 0.75rem 1.5rem;
       }
     }
   </style>
 </head>
 <body>
-  <h1>tHiS sItE iS uNdEr CoNsTrUcTiOn</h1>
-  <a href="home.html" class="btn btn-check">Check it Out</a>
+  <div>
+    <h1>tHiS sItE iS uNdEr CoNsTrUcTiOn</h1>
+    <a href="home.html" class="btn-enter">Check it Out</a>
+  </div>
 </body>
 </html>
