@@ -1,86 +1,32 @@
 [
   {
-    "title": "Yellow brick road",
+    "title": "Test: Testing Essay Header",
     "author": "@jg",
-    "excerpt": "A reflection on the enduring values that guide the field of public administration.",
+    "excerpt": "Placeholder text. ABC 123. Sergey Ivanovich Koznishev wanted a rest from mental work, and instead of...",
     "date": "2025-09-20",
     "link": "#"
   },
   {
-    "title": "I want nobody nobody but you",
-    "author": "John Cena",
-    "excerpt": "Why integrity and accountability must anchor every decision in public service.",
+    "title": "Lorem Ipsum dolor",
+    "author": "Author Name",
+    "excerpt": "Know thyself, for the unexamined life is not worth living, and no man ever steps in the same river twice.",
     "date": "2025-09-10",
     "link": "#"
   },
   {
-    "title": "Bakit mo ako iniwan",
-    "author": "Donald Trump",
-    "excerpt": "Leadership is more than holding a position — it’s about making a difference.",
-    "date": "2025-08-28",
+    "title": "Ipsum dolor sit amet",
+    "author": "Author Name",
+    "excerpt": "Know thyself, for the unexamined life is not worth living, and no man ever steps in the same river twice.",
+    "date": "2025-09-11",
     "link": "#"
   },
-  {
-    "title": "Yellow brick road",
-    "author": "@jg",
-    "excerpt": "A reflection on the enduring values that guide the field of public administration.",
-    "date": "2025-08-20",
-    "link": "#"
-  },
-  {
-    "title": "I want nobody nobody but you",
-    "author": "John Cena",
-    "excerpt": "Why integrity and accountability must anchor every decision in public service.",
-    "date": "2025-08-10",
-    "link": "#"
-  },
-  {
-    "title": "Bakit mo ako iniwan",
-    "author": "Donald Trump",
-    "excerpt": "Leadership is more than holding a position — it’s about making a difference.",
-    "date": "2025-07-28",
-    "link": "#"
-  },
-  {
-    "title": "Yellow brick road",
-    "author": "@jg",
-    "excerpt": "A reflection on the enduring values that guide the field of public administration.",
-    "date": "2025-07-20",
-    "link": "#"
-  },
-  {
-    "title": "I want nobody nobody but you",
-    "author": "John Cena",
-    "excerpt": "Why integrity and accountability must anchor every decision in public service.",
-    "date": "2025-07-10",
-    "link": "#"
-  },
-  {
-    "title": "Bakit mo ako iniwan",
-    "author": "Donald Trump",
-    "excerpt": "Leadership is more than holding a position — it’s about making a difference.",
-    "date": "2025-07-29",
-    "link": "#"
-  },
+ 
   {
     "title": "f22 f35 f15 f/a 18",
     "author": "@jg",
-    "excerpt": "A reflection on the enduring values that guide the field of public administration.",
+    "excerpt": "Beware the barrenness of a busy life, for nature does nothing in vain, and to be content with little is the greatest wealth.",
     "date": "2026-07-20",
     "link": "#"
   },
-  {
-    "title": "I just want you to know that im selling potatoes",
-    "author": "John Cena",
-    "excerpt": "Why integrity and accountability must anchor every decision in public service.",
-    "date": "2026-07-10",
-    "link": "#"
-  },
-  {
-    "title": "This is so much work everything is a mess",
-    "author": "Donald Trump",
-    "excerpt": "Leadership is more than holding a position — it’s about making a difference.",
-    "date": "2026-07-29",
-    "link": "#"
-  }
+  
 ]
